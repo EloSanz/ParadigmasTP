@@ -1,25 +1,21 @@
-package clases;
+package com.model;
 
-public class Administrativo extends Empleado{
-
-	
+public class Administrativo extends Empleado {
 	private int aniosTrabajados;
+
 	public Administrativo(String nombre, int id, double salarioBase, int aniosTrabajados) {
 		super(nombre, id, salarioBase);
 		this.aniosTrabajados = aniosTrabajados;
-}
+	}
 
-	public double calcularSalario()
-	{
+	public double calcularSalario() {
 		double porcentaje = 0.05;
 		return this.salario_base + (this.salario_base * porcentaje * this.aniosTrabajados);
 	}
-	
-	@Override
-	public String toString()
-	{
-		return "Administrador: " + this.nombre + " id: "+this.id;
-	}
 
+	@Override
+	public String toString() {
+		return "Administrador: " + this.nombre + " id: " + this.id;
+	}
 
 }

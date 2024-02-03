@@ -1,4 +1,4 @@
-package clases;
+package com.model;
 
 public class Operario extends Empleado {
 		private int produccion;

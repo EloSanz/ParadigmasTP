@@ -1,6 +1,6 @@
-package clases;
+package com.model;
 
-public class Empleado {
+public abstract class Empleado {
 	protected String nombre;
 	protected int id;
 	protected double salario_base;
