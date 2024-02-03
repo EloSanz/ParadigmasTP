@@ -14,4 +14,12 @@ public class Administrativo extends Empleado{
 		double porcentaje = 0.05;
 		return this.salario_base + (this.salario_base * porcentaje * this.aniosTrabajados);
 	}
+	
+	@Override
+	public String toString()
+	{
+		return "Administrador: " + this.nombre + " id: "+this.id;
+	}
+
+
 }

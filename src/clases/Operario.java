@@ -1,8 +1,6 @@
 package clases;
 
 public class Operario extends Empleado {
-
-
 		private int produccion;
 		
 		public Operario(String nombre, int id, double salarioBase, int produccion) 
@@ -16,6 +14,10 @@ public class Operario extends Empleado {
 			return this.salario_base + (this.salario_base * porcentaje * this.produccion);
 		}
 		
-		
+		@Override
+		public String toString()
+		{
+			return "Operario: " + this.nombre + " id: "+this.id;
+		}
 		
 }
